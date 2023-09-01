@@ -42,19 +42,19 @@ router.post('/reservations', function(req, res, next) {
     res.status(422).json({message:"Vous devez renseigner un spot ou une room"});
   }
 
-  // Enregistrer les informations dans la base
-  const r1 = Reservation.build({
-    id_user: id_user,
-    number_of_customers: number_of_customers,
-    reservation_date: reservation_date,
-    reservation_name: reservation_name,
-    reservation_note: reservation_note,
-    reservation_status: reservation_status,
-  });
+  // // Enregistrer les informations dans la base
+  // const r1 = Reservation.build({
+  //   id_user: id_user,
+  //   number_of_customers: number_of_customers,
+  //   reservation_date: reservation_date,
+  //   reservation_name: reservation_name,
+  //   reservation_note: reservation_note,
+  //   reservation_status: reservation_status,
+  // });
   
-  r1.save().then(
-    () => console.log("Réservation enregistrée")
-  );
+  // r1.save().then(
+  //   () => console.log("Réservation enregistrée")
+  // );
 
   res.json({message: 'Votre reservation a bien été enregistrée'});
 });
