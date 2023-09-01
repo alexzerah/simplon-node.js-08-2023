@@ -3,20 +3,21 @@ const router = express.Router();
 const {Reservation, User, Room, Spot} = require("../db.js");
 
 /* /reservations */ 
-
 router.get('/reservations', function(req, res, next) {
   res.json(
-    { "reservations": [
-      {
-        id: 1,
-        number_of_customers: 3,
-        reservation_date: '2021-01-01',
-        reservation_name: 'Jean',
-        reservation_note: 'Pas de note',
-        reservation_status: 1,
-        spot: 1
-    }]
-    }
+    { message: {
+      "reservations": [
+        {
+          id: 1,
+          number_of_customers: 3,
+          reservation_date: '2021-01-01',
+          reservation_name: 'Jean',
+          reservation_note: 'Pas de note',
+          reservation_status: 1,
+          spot: 1
+        }
+      ]
+    }}
   )
 });
 
@@ -58,5 +59,74 @@ router.post('/reservations', function(req, res, next) {
 
   res.json({message: 'Votre reservation a bien été enregistrée'});
 });
+
+router.put('/reservations', function(req, res, next) {
+  res.json({message: 'Votre reservation a bien été modifiée'});
+});
+
+router.delete('/reservations', function(req, res, next) {
+  res.json({message: 'Votre reservation a bien été supprimée'});
+});
+
+/* /users */ 
+
+router.get('/users', function(req, res, next) {
+  res.json({
+    message: {email: 'alex@mail.com', firstname: 'Alex', lastname: 'Zerah',}
+  });
+});
+
+router.post('/users', function(req, res, next) {
+  res.json({message: 'Votre compte a bien été créé'});
+});
+
+router.put('/users', function(req, res, next) {
+  res.json({message: 'Votre compte a bien été modifié'});
+});
+
+router.delete('/users', function(req, res, next) {
+  res.json({message: 'Votre compte a bien été supprimé'});
+});
+
+/* /rooms */
+
+router.get('/rooms', function(req, res, next) {
+  res.json({
+    message: {id: 1}
+  })
+});
+
+router.post('/rooms', function(req, res, next) {
+  res.json({message: 'Votre room a bien été créée'});
+});
+
+router.put('/rooms', function(req, res, next) {
+  res.json({message: 'Votre room a bien été modifiée'});
+});
+
+router.delete('/rooms', function(req, res, next) {
+  res.json({message: 'Votre room a bien été supprimée'});
+});
+
+/* /spots */
+
+router.get('/spots', function(req, res, next) {
+  res.json({
+    message: {id: 1}
+  })
+});
+
+router.post('/spots', function(req, res, next) {
+  res.json({message: 'Votre spot a bien été créé'});
+});
+
+router.put('/spots', function(req, res, next) {
+  res.json({message: 'Votre spot a bien été modifié'});
+});
+
+router.delete('/spots', function(req, res, next) {
+  res.json({message: 'Votre spot a bien été supprimé'});
+}
+);
 
 module.exports = router;
