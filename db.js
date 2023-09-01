@@ -2,7 +2,8 @@
 const {Sequelize, DataTypes} = require('sequelize');
 
 // 2. Implémenter la configuration postgreSQL
-const sequelize = new Sequelize('postgres://alexandrezerah:@127.0.0.1:5432/postgres') // Example for postgres
+// const sequelize = new Sequelize('postgres://alexandrezerah:@127.0.0.1:5432/postgres') // Example for postgres
+const sequelize = new Sequelize('postgres://fdmqwywx:kG95ibqBYgOxx1QttglF2D7OvB54hKl2@trumpet.db.elephantsql.com/fdmqwywx') // Example for postgres
 
 // 3. Création d'un modèle
 const Reservation = sequelize.define('Reservation', {
