@@ -1,16 +1,32 @@
 const express = require('express');
 const router = express.Router();
-const {User} = require("../db.js");
+const { User } = require("../db.js");
 
 /* /Users */ 
-router.get('/users', function(req, res, next) {
-  res.json({
-    message: {email: 'alex@mail.com', firstname: 'Alex', lastname: 'Zerah',}
+router.get('/users', async function(req, res, next) {
+  const users = await User.findAll({
+    attributes: ['email', 'firstName', 'lastName']
   });
-});
 
-router.post('/users', function(req, res, next) {
-  res.json({message: 'Votre compte a bien été créé'});
+  res.json(users);
+    
+  });
+
+router.post('/users', async function(req, res, next) {
+
+  const { email, firstName, lastName } = req.body;
+
+  const newUser = await User.create({
+    email,
+    user_password,
+    user_role,
+    firstName,
+    lastName});
+
+    res.status(201).json({
+      message: 'Utilisateur créé avec succès',
+      user: newUser
+    });
 });
 
 router.put('/users', function(req, res, next) {
