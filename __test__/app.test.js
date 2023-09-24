@@ -1,10 +1,10 @@
 const request = require('supertest');
 const app = require('../app');
 
-describe('GET /signin', () => {
-  it('should return a greeting', async () => {
+describe('GET /api/reservations', () => {
+  it('should return a 401 error', async () => {
     const res = await request(app)
-      .get('/api/signin')
+      .get('/api/reservations')
       .expect('Content-Type', /json/)
       .expect(401);
   });
