@@ -66,28 +66,6 @@ const User = sequelize.define('User', {
   }
 });
 
-// // `sequelize.define` also returns the model
-// console.log(Reservation === sequelize.models.Reservation); // true
-
-// Reservation.sync({ force: true }).then(() => {
-//   console.log("The table for the Reservation model was just (re)created!")
-// })
-
-// Spot.sync({ force: true }).then(() => {
-//   console.log("The table for the Spot model was just (re)created!")
-// })
-
-// Room.sync({ force: true }).then(() => {
-//   console.log("The table for the Room model was just (re)created!")
-// })
-
-// User.sync({ force: true }).then(() => {
-//   console.log("The table for the User model was just (re)created!")
-// })
-
-// Classe => Référence / abstraction de votre entité
-// Object => Instance de votre classe
-
 const r1 = Reservation.build({
   number_of_customers: 3,
   reservation_date: '2024-01-01',
@@ -99,23 +77,3 @@ const r1 = Reservation.build({
 r1.save().then(
   () => console.log("Réservation enregistrée")
 );
-
-
-
-
-
-
-
-
-
-
-
-// const r1 = Reservation.build({
-//   number_of_customers: 3,
-//   reservation_date: '2021-01-01',
-//   reservation_name: 'Jean',
-//   reservation_note: 'Pas de note',
-//   reservation_status: 1,
-// });
-
-// r1.save().then(() => console.log('Réservation enregistrée'));

@@ -72,10 +72,6 @@ module.exports = {
   Room,
   User
 };
- 
-// Classe => Référence / abstraction de votre entité
-// Object => Instance de votre classe
-
 
 
 
