@@ -1,5 +1,9 @@
 # Simplon - Projet Node.js
 
+## Docs du projet Node.js
+
+[📚 Docs du projet Node.js](/docs/README.md)
+
 ## Objectif
 
 ### Applicatif
