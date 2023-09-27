@@ -6,9 +6,9 @@
 - [2. Immplementer les routes](2-implementer-les-routes.md)
 - [3. Creer la base de données](3-creer-la-base-de-donnees.md)
 - [4. Lier la base de données aux routes](4-db-routes.md)
-- [5. Implémenter l'authentification](5-authentification.md)
+- [5. Implémenter l'authentification](5-auth.md)
 - [6. Implémenter les tests](6-tests.md)
 
 ## Autres
 
-- [Explication de code](autes/explication.md)
+- [Explication de code](autres/explication.md)

@@ -1,8 +1,12 @@
+# Auth
 
+## Qu'est-ce qu'un token ?
 
-[https://jwt.io/](https://jwt.io/)
+Un token est une chaîne de caractères qui permet d'authentifier un utilisateur.
 
-[jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
+- [https://jwt.io/](https://jwt.io/)
+- [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
+- [Auth 0](https://auth0.com/)
 
 `$ npm install jsonwebtoken`
 
