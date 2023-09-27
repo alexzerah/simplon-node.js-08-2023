@@ -72,9 +72,11 @@ Pour récupérer l'information avec node.js, il faut utiliser `req.body`.
 ```js
 const user = {
     username: req.body.username,
-    password: req.bodygit .password,
+    password: req.body.password,
   };
 ```
+
+### Hasher le mot de passe
 
 Ça fonctionne ! Comme dit précédemment, nous voulons le mot de passe hashé et non en clair.
 Pour ça nous allons utilisé bcrypt.
