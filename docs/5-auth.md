@@ -10,7 +10,7 @@ Un token est une chaîne de caractères qui permet d'authentifier un utilisateur
 
 `$ npm install jsonwebtoken`
 
-- Créer une route pour : 
+- Créer une route pour :
   - s'inscrire
   - se connecter
   - se déconnecter
@@ -46,6 +46,13 @@ $ npm install bcrypt
 const bcrypt = require('bcrypt');
 ```
 
+## Créer les routes dans POSTMAN
+
+- `POST /auth/signup`
+- `POST /auth/signin`
+
+## Créer la route `/signup`
+
 Créons la route `/signup` pour créer un compte.
 Comme nous voulons envoyé des données depuis le client, il faut créer une route en `POST`.
 
@@ -65,7 +72,7 @@ Pour récupérer l'information avec node.js, il faut utiliser `req.body`.
 ```js
 const user = {
     username: req.body.username,
-    password: req.bpdy.password,
+    password: req.bodygit .password,
   };
 ```
 
@@ -74,7 +81,7 @@ Pour ça nous allons utilisé bcrypt.
 Comme le traitement est asynchrone, nous allons utiliser `async/await`.
 
 ```js
-router.post('/signin', async (req, res) => {
+router.post('/signup', async (req, res) => {
   const salt = await bcrypt.genSalt(10);
   const hashedPassword = await bcrypt.hash(req.body.password, salt);
 
