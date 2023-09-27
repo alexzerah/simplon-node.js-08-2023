@@ -93,7 +93,7 @@ router.post('/signup', async (req, res) => {
   };
 
     res.json('Utilisateur créé');
-};
+});
 ```
 
 - Nous pouvons utiliser `console.log()` ou renvoyer l'utilisateur pour voir si ça fonctionne.
