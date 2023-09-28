@@ -18,7 +18,7 @@
 
 ## Objectifs
 
-- En utilisant [l'approche TDD](https://www.youtube.com/watch?v=WbAeTGTmRcA), vous devez
+- En utilisant [l'approche TDD](tdd.md), vous devez
 
 ### Features
 
@@ -40,6 +40,7 @@
 - [ ] Implémenter une base de données de tests.
 - [ ] Ajouter des seeds pour les utilisateurs, les réservations, les rooms et les spots.
 - [ ] Ajouter une route `GET /users/me` qui renvoie les informations de l'utilisateur connecté.
+- [ ] L'utilisateur ne peut pas créer un compte avec un email existant
 
 #### Architecture
 
