@@ -11,7 +11,7 @@ npm install express-generator
 ```
 
 ```
-npx express —view=pug myapp
+npx express no—-view myapp
 ```
 
 Remplacer myapp par votre nom de dossier.
@@ -22,7 +22,7 @@ Nous voulons utiliser express comme une API, nous lui demandons donc de ne pas i
 Avant de continuer, vous pouvez faire la commande suivantes pour installer les dépendances.
 
 ```bash
-cd mayo # Optionnel, si besoin
+cd myapp # Optionnel, si besoin
 npm i # équivalent a npm install
 ```
 
