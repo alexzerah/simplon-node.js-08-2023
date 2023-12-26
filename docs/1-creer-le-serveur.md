@@ -24,6 +24,7 @@ Avant de continuer, vous pouvez faire la commande suivantes pour installer les d
 ```bash
 cd myapp # Optionnel, si besoin
 npm i # équivalent a npm install
+npm run start #pour lancer le serveur
 ```
 
 Vous devriez avoir les dossiers et fichiers suivants :
