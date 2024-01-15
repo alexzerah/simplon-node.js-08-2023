@@ -7,6 +7,9 @@
   - [Créer les modèles](#créer-les-modèles)
   - [Seeders](#seeders)
     - [Reservation](#reservation)
+    - [Room](#room)
+    - [Spot](#spot)
+    - [User](#user)
 
 ## Prérequis
 
@@ -133,17 +136,94 @@ npx sequelize-cli seed:generate --name room
 module.exports = {
   async up (queryInterface, Sequelize) {
 
-    await queryInterface.bulkInsert('reservations', [{
+    await queryInterface.bulkInsert('Reservations', [{
       number_of_customers: 4,
       reservation_date: new Date(),
       reservation_name: "Alex",
       reservation_note: "Un menu végétarien",
-      reservation_status: "En attente",
+      reservation_status: 1,
+      createdAt: new Date(),
+      updatedAt: new Date()
     }]);
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.bulkDelete('reservations', null, {});
+    await queryInterface.bulkDelete('Reservations', null, {});
   }
 };
+
+```
+
+### Room
+
+```js
+'use strict';
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up (queryInterface, Sequelize) {
+    await queryInterface.bulkInsert('Rooms', [{
+      room_name: "Salle 1",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    }]);
+  },
+
+  async down (queryInterface, Sequelize) {
+    await queryInterface.bulkDelete('Rooms', null, {});
+  }
+};
+
+```
+
+### Spot
+
+```js
+'use strict';
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up (queryInterface, Sequelize) {
+    await queryInterface.bulkInsert('Spots', [{
+      spot_name: "Le Bistrot de la Gare",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    }]);
+  },
+
+  async down (queryInterface, Sequelize) {
+    await queryInterface.bulkDelete('Spots', null, {});
+  }
+};
+
+```
+
+### User
+
+```js
+'use strict';
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up (queryInterface, Sequelize) {
+    await queryInterface.bulkInsert('Users', [{
+      firstName: "Alex",
+      lastName: "Zerah",
+      email: "pro@alexzerah.com",
+      user_role: "client",
+      user_password: "password en attente de hashage",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    }]);
+  },
+
+  async down (queryInterface, Sequelize) {
+    await queryInterface.bulkDelete('Users', null, {});
+  }
+};
+
+```
+
+```bash
+npx sequelize-cli db:seed:all
 ```
