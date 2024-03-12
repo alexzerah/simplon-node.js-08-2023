@@ -9,6 +9,7 @@
 - [4. Lier la base de données aux routes](4-db-routes.md)
 - [5. Implémenter l'authentification](5-auth.md)
 - [6. Implémenter les tests](6-tests.md)
+- [7. Implémenter les contrôleurs](7-controllers.md)
 
 ## Autres
 
