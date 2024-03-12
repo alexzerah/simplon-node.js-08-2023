@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {Spot} = require("../db.js");
+const {Spot} = require('../models');
 
 /* /Spots */
 router.get('/spots', function(req, res, next) {

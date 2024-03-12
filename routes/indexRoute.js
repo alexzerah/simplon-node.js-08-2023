@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 // Import des routes
-const reservationsRouter = require('./reservations');
-const usersRouter = require('./users');
-const spotsRouter = require('./spots');
-const roomsRouter = require('./rooms');
+const reservationsRouter = require('./reservationsRoute');
+const usersRouter = require('./usersRoute');
+const spotsRouter = require('./spotsRoute');
+const roomsRouter = require('./roomsRoute');
 
 // Mise en place du router
 router.use(reservationsRouter);
