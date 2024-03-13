@@ -58,4 +58,3 @@
 | 🔜 5 sources de veille                                 | ❌     |            |
 | 🔜 Explication d’un concept                            | ❌     |            |
 | 🔜 Dossier type d'une démarche de travail              | ❌     |            |
-

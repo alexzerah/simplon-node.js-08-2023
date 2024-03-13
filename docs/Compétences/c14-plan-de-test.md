@@ -1,4 +1,4 @@
-# C.14 Préparer et exécuter les plans de tests d’une application 
+# C.14 Préparer et exécuter les plans de tests d’une application
 
 - [C.14 Préparer et exécuter les plans de tests d’une application](#c14-préparer-et-exécuter-les-plans-de-tests-dune-application)
   - [Versions](#versions)
