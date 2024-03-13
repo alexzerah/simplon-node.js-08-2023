@@ -16,11 +16,11 @@
 | Tâche                                                     | Validée    | Validation                         |
 |-----------------------------------------------------------|:----------:|------------------------------------|
 | Utilisation d'Express Validator                           |     ❌     |                                    |
-| Intégration de bcrypt pour le hashage des mots de passe   |     ❌     |                                    |
+| Intégration de bcrypt pour le hashage des mots de passe   |     ✅     |                                    |
 | Sanitisation avec Joi                                     |     ❌     |                                    |
-| Accès aux données restreint par rôle                      |     ❌     |                                    |
-| Implémentation du champ updatedAt dans les modèles        |     ❌     |                                    |
-| Utilisation de try/catch pour la gestion d'erreurs        |     ❌     |                                    |
+| Accès aux données restreint par rôle                      |     ✅     |                                    |
+| Implémentation du champ updatedAt dans les modèles        |     ✅     |                                    |
+| Utilisation de try/catch pour la gestion d'erreurs        |     🟠     |                                    |
 
 ## Logs
 

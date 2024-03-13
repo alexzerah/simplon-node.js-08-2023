@@ -11,25 +11,25 @@
 
 ## Versions
 
-- Version : 1.0
-- Date : 13/3/2024
+- **Version** : 1.0
+- **Date** : 13/3/2024
 
 ## Routes, modeles, contrôleurs et services
 
 | Tâche                                                           | Validée | Lien                                             |
 |-----------------------------------------------------------------|-----------|------------------------------------------------|
-| Création des dossiers et fichiers Routes (User, Room, Spot...)  |    ❌     |                                                |
-| Création des dossiers et fichiers Modèles (User, Room, Spot...) |    ❌     |                                                |
-| Mise en place des contrôleurs (User, Room, Spot...)             |    ❌     |                                                |
+| Création des dossiers et fichiers Routes (User, Room, Spot...)  |    ✅      |                                                |
+| Création des dossiers et fichiers Modèles (User, Room, Spot...) |    ✅     |                                                |
+| Mise en place des contrôleurs (User, Room, Spot...)             |    ✅     |                                                |
 | 🔜 Implémenter les services                                     |    ❌     |                                                |
 
 ## Sécurité
 
 | Tâche                                                           | Validée | Lien                                             |
 |-----------------------------------------------------------------|-----------|------------------------------------------------|
-| Sécurité et Authentification                                    |    ❌     |                                                |
-| Utiliser bcrypt pour le hashage des mots de passe               |    ❌     |                                                |
-| Mettre en place l'authentification avec JWT (jsonwebtoken)      |    ❌     |                                                |
+| Sécurité et Authentification                                    |    ✅     |                                                |
+| Utiliser bcrypt pour le hashage des mots de passe               |    ✅     |                                                |
+| Mettre en place l'authentification avec JWT (jsonwebtoken)      |    ✅     |                                                |
 
 ## Validation des données
 
@@ -37,8 +37,8 @@
 |-----------------------------------------------------------------|-----------|------------------------------------------------|
 | 🔜 Intégrer express-validator pour la validation des données    |    ❌     |                                                |
 | 🔜 Nettoyer les données entrantes pour prévenir les injections  |    ❌     |                                                |
-| Établir une nomenclature cohérente pour le code                 |    ❌     |                                                |
-| Commenter et expliquer les segments de code complexes           |    ❌     |                                                |
+| Établir une nomenclature cohérente pour le code                 |    ✅     |                                                |
+| Commenter et expliquer les segments de code complexes           |    ✅     |                                                |
 
 ## Base de données
 
@@ -52,7 +52,7 @@
 | Tâche                                                           | Validée | Lien                                             |
 |-----------------------------------------------------------------|-----------|------------------------------------------------|
 | 🔜 Définir une matrice de test pour couvrir toutes les fonctionnalités | ❌ |                                                |
-| 🔜 Implémenter les tests unitaires et d'intégration             |    ❌     |                                                |
+| 🔜 Implémenter les tests unitaires et d'intégration             |    🟠     |                                                |
 
 ## Documentation API
 

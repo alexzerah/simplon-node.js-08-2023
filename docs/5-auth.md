@@ -71,7 +71,7 @@ Pour récupérer l'information avec node.js, il faut utiliser `req.body`.
 
 ```js
 const user = {
-    username: req.body.username,
+    email: req.body.email,
     password: req.body.password,
   };
 ```
@@ -88,7 +88,7 @@ router.post('/signup', async (req, res) => {
   const hashedPassword = await bcrypt.hash(req.body.password, salt);
 
   const user = {
-    username: req.body.username,
+    email: req.body.email,
     password: hashedPassword
   };
 
@@ -106,7 +106,7 @@ router.post('/signup', async (req, res) => {
   const hashedPassword = await bcrypt.hash(req.body.password, salt);
 
   const user = {
-    username: req.body.username,
+    email: req.body.email,
     password: hashedPassword,
     // ... Autres champs nécessaires
   };
@@ -132,14 +132,14 @@ const SECRET_KEY = 'secretkey23456'; // A remplacer par une clé secrète
 router.post('/signin', async (req, res) => {
   const user = await User.findOne({
     where: {
-      username: req.body.username,
+      email: req.body.email,
     },
   });
 
-    if (!user) return res.status(400).json({message: `Nom d'utilisateur ou mot de passe incorrect`});
+    if (!user) return res.status(400).json({message: `Email ou mot de passe incorrect`});
 
     const validPassword = await bcrypt.compare(req.body.password, user.password);
-    if (!validPassword) return res.status(400).json({message: `Nom d'utilisateur ou mot de passe incorrect`});
+    if (!validPassword) return res.status(400).json({message: `Email ou mot de passe incorrect`});
 
     const payload = {
     username: user.username,

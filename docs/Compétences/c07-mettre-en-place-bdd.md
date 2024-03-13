@@ -40,4 +40,4 @@
 
 | Tâche                                  | Validée | Validation |
 | -------------------------------------- | :-----: | ---------- |
-| - LogsUtilisation de Morgan et Winston |   ❌    |            |
+| - Utilisation de Morgan et Winston |   ❌    |            |
