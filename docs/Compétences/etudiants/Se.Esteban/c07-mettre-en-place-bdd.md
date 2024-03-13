@@ -34,7 +34,7 @@
 |--------------------------------------------------------------|:-----------:|------------------------------------|
 | Authentification                                              |     ✅     |                                    |
 | Autorisation d’accès                                          |     ✅     |                                    |
-| Assurer le Contrôle d'Accès Basé sur les Rôles (RBAC)         |     ❌     |                                    |
+| Assurer le Contrôle d'Accès Basé sur les Rôles (RBAC)         |     ✅     |                                    |
 
 ## Logs
 
