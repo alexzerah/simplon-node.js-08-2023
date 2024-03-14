@@ -8,8 +8,6 @@ const SECRET_KEY = 'secretkey23456';
 // Simuler une base de données
 const users = [];
 
-console.log(users);
-
 // Sign-up (Inscription)
 router.post('/signup', async (req, res) => {
   console.log(req.body);

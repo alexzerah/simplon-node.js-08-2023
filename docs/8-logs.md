@@ -30,6 +30,7 @@ npm install winston
 ### logger.js
 
 ```js
+// logger.js
 const winston = require('winston');
 
 // Le niveau définira ce qui sera affiché

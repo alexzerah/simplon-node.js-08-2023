@@ -10,7 +10,11 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      User.hasMany(models.Reservation, {
+        foreignKey: 'userId', // Assurez-vous que 'userId' est la clé étrangère correcte dans votre modèle Reservation
+        as: 'reservations', // Optionnel: Alias pour l'association, utile pour les requêtes
+        onDelete: 'CASCADE', // Supprimez toutes les réservations associées lors de la suppression d'un utilisateur
+      });
     }
   }
   User.init({

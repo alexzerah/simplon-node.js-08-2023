@@ -29,20 +29,6 @@ router.post('/users', async function(req, res, next) {
     // Gérer l'erreur en cas de champ manquant ou autre problème
     res.status(400).json({ error: error.message });
   }
-
-   
-
-  // const newUser = await User.create({
-  //   email,
-  //   user_password,
-  //   user_role,
-  //   firstName,
-  //   lastName});
-
-  //   res.status(201).json({
-  //     message: 'Utilisateur créé avec succès',
-  //     user: newUser
-  //   });
 });
 
 /* /PUT */ 

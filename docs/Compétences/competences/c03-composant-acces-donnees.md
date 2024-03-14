@@ -8,6 +8,7 @@
   - [Base de données](#base-de-données)
   - [Tests](#tests)
   - [Documentation API](#documentation-api)
+  - [A faire :](#a-faire-)
 
 ## Versions
 
@@ -18,8 +19,8 @@
 
 | Tâche                                                           | Validée | Lien |
 | --------------------------------------------------------------- | ------- | ---- |
-| Création des dossiers et fichiers Routes (User, Room, Spot...)  | ❌      |      |
-| Création des dossiers et fichiers Modèles (User, Room, Spot...) | ❌      |      |
+| Création des dossiers et fichiers Routes (User, Room, Spot...)  | 🟩      |      |
+| Création des dossiers et fichiers Modèles (User, Room, Spot...) | 🟩      |      |
 | Mise en place des contrôleurs (User, Room, Spot...)             | ❌      |      |
 | 🔜 Implémenter les services                                    | ❌      |      |
 
@@ -59,3 +60,8 @@
 | Tâche                                               | Validée | Lien |
 | --------------------------------------------------- | ------- | ---- |
 | 🔜 Préparer la documentation de l'API avec Swagger | ❌      |      |
+
+
+## A faire :
+
+- Controlleurs a faire

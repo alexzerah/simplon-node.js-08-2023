@@ -46,3 +46,7 @@
 ### Docs
 
 Swagger
+
+- 1 J
+- 2-3 frontend
+  - REact <--> Backend - Node.js

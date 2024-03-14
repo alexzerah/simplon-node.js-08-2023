@@ -11,8 +11,8 @@
 
 ## Versions
 
-- Version : 1.0
-- Date : 13/3/2024
+- **Version** : 1.0
+- **Date** : 13/3/2024
 
 ## Routes, modeles, contrôleurs et services
 

@@ -1,10 +1,11 @@
 // Importation des modèles Sequelize
 const { Reservation, Table, Client } = require('../models');
+const logger = require('../utils/logger');
 
 // Contrôleur pour créer une réservation
 exports.createReservation = async (req, res) => {
     try {
-
+        logger.info('Création d\'une réservation par ' + req.user);
         const {id_user, id_spot, id_room, number_of_customers, reservation_date, reservation_name, reservation_note, reservation_status,  userId } = req.body;
         
         if (!reservation_name) {
@@ -41,6 +42,7 @@ exports.createReservation = async (req, res) => {
         res.json({message: 'Votre reservation a bien été enregistrée'});
     } catch (error) {
         console.log(error);
+        logger.error(error.message);
         // res.status(400).json({ error: error.message });
     }
 };
@@ -48,9 +50,7 @@ exports.createReservation = async (req, res) => {
 // Contrôleur pour obtenir la liste des réservations
 exports.getReservations = async (req, res) => {
     try {
-        const reservations = await Reservation.findAll({
-            include: [Table, Client] // Pour inclure des détails sur la table et le client
-        });
+        const reservations = await Reservation.findAll({});
         res.status(200).json(reservations);
     } catch (error) {
         res.status(400).json({ error: error.message });
