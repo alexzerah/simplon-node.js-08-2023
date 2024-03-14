@@ -2,38 +2,33 @@
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const logger = require('morgan');
-const jwt = require('jsonwebtoken');
+// const logger = require('morgan');
+const cors = require('cors');
+const verifyJWT = require("./middlewares/jwt.middleware");
+const morganMiddleware = require("./middlewares/morgan.middleware");
+const logger = require("./utils/logger");
 
 // Fichier de routes
-const indexRouter = require('./routes/index');
-const authRouter = require('./routes/auth');
+const indexRouter = require('./routes/indexRoute');
+const authRouter = require('./routes/authRoute');
 
 // Implémente l'app qui est une instance d'express
 const app = express();
 
-const verifyJWT = (req, res, next) => {
-  const  SECRET_KEY = "secretkey23456";
-  const token = req.header('Authorization');
-
-  if(!token) return res.status(401).json({ auth: false, message: 'No token provided.' });
-
-  try {
-    const decoded = jwt.verify(token, SECRET_KEY);
-    console.log(decoded);
-    req.user = decoded;
-    next();
-  } catch (e) {
-    res.status(400).json({ auth: false, message: 'Invalid token.' });
-  }
-};
+corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200
+}
 
 // Middleware
-app.use(logger('dev'));
+app.use(morganMiddleware);
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+logger.http('Debut session')
 
 // Implémentation des routes
 app.use('/', authRouter); // Nous implémentons les routes d'authentification à part car elles ne nécessitent pas d'être protégées par JWT
