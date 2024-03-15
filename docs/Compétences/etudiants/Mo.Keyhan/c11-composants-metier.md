@@ -25,9 +25,9 @@
 
 | Tâche                                   | Validée  |Validation                          |
 |-----------------------------------------|:----------:|------------------------------------|
-| Création des modèles de données         |     ❌     |                                    |
-| Implémentation du champ updatedAt       |     ❌     |                                    |
-| Accès aux données restreint par rôle    |     ❌     |                                    |
+| Création des modèles de données         |     ✅     |                                    |
+| Implémentation du champ updatedAt       |     ✅     |                                    |
+| Accès aux données restreint par rôle    |     ✅     |                                    |
 
 ## Validation et Sanitisation des Données
 
@@ -47,4 +47,4 @@
 
 | Tâche                                                  | Validée  | Validation                         |
 |--------------------------------------------------------|:----------:|------------------------------------|
-| Développement de tests unitaires pour chaque composant |     ❌     |                                    |
+| Développement de tests unitaires pour chaque composant |     🟠     |                                    |
