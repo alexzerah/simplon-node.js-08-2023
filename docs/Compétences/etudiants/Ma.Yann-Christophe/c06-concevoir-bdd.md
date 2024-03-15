@@ -8,10 +8,10 @@
 - **Version** : 1.0
 - **Date** : 13/3/2024
 
-| Tâche                                       | Validée    | Validation                         |
-|---------------------------------------------|:----------:|------------------------------------|
-| Models nommés selon une norme               |     ❌     |                                    |
-| Schema physique de base de données          |     ❌     |                                    |
-| Schema entite association                   |     ❌     |                                    |
-| Diagramme de classe                         |     ❌     |                                    |
-| Association implémentée                     |     ❌     |                                    |
+| Tâche                              | Validée | Validation |
+| ---------------------------------- | :-----: | ---------- |
+| Models nommés selon une norme      |   ✅    |            |
+| Schema physique de base de données |   🟠   |            |
+| Schema entite association          |   ❌    |            |
+| Diagramme de classe                |   ❌    |            |
+| Association implémentée            |   ❌    |            |
