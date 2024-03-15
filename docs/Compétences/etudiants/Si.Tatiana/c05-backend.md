@@ -17,14 +17,14 @@
 
 | Tâches                                                                       | Statut       | Validation     |
 |------------------------------------------------------------------------------|------------- |----------------|
-| Les implementations du code sont fonctionnels                                | ❌           |                |
+| Les implementations du code sont fonctionnels                                | ✅           |                |
 
 ## Structure
 
 | Tâches                                                                       | Statut       | Validation     |
 |------------------------------------------------------------------------------|------------- |----------------|
-| Route                                                                        | ❌           |                |
-| Controller                                                                   | ❌           |                |
+| Route                                                                        | ✅           |                |
+| Controller                                                                   | ✅           |                |
 | 🔜 Services                                                                  | ❌           |                |
 
 ## POO
@@ -38,24 +38,24 @@
 
 | Tâches                                                                       | Statut       | Validation     |
 |------------------------------------------------------------------------------|------------- |----------------|
-| Authentification                                                             | ❌           |                |
-| Authorisation                                                                | ❌           |                |
-| Sign in                                                                      | ❌           |                |
-| Sign up                                                                      | ❌           |                |
-| bcrypt                                                                       | ❌           |                |
-| jwt                                                                          | ❌           |                |
-| Mot de passe oublié                                                          | ❌           |                |
+| Authentification                                                             | ✅           |                |
+| Authorisation                                                                | ✅           |                |
+| Sign in                                                                      | ✅           |                |
+| Sign up                                                                      | ✅           |                |
+| bcrypt                                                                       | ✅           |                |
+| jwt                                                                          | ✅           |                |
+| Mot de passe oublié                                                          | ✅           |                |
 
 ## Outils, méthodes et docs
 
 | Tâches                                                                       | Statut       | Validation     |
 |------------------------------------------------------------------------------|------------- |----------------|
-| POSTMAN                                                                      | ❌           |                |
+| POSTMAN                                                                      | ✅           |                |
 | 🔜 Validation des données (express validator)                                | ❌           |                |
 | 🔜 Purification des données (JOI)                                            | ❌           |                |
-| 🔜 Mise en place des logs (morgan et autre winston)                          | ❌           |                |
-| 🔜 Schema bdd / schema du projet / explication du code                       | ❌           |                |
-| 🔜 5 sources de veille                                                       | ❌           |                |
-| 🔜 Explication d’un concept                                                  | ❌           |                |
-| 🔜 Dossier type d'une démarche de travail                                    | ❌           |                |
+| 🔜 Mise en place des logs (morgan et autre winston)                          | ✅           |                |
+| 🔜 Schema bdd / schema du projet / explication du code                       | 🟠           |                |
+| 🔜 5 sources de veille                                                       | 🟠           |                |
+| 🔜 Explication d’un concept                                                  | 🟠           |                |
+| 🔜 Dossier type d'une démarche de travail                                    | 🟠           |                |
 
