@@ -2,6 +2,9 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const {signUpValidationRules, signInValidationRules} = require('../middlewares/authValidationRules');
+const { validationResult } = require('express-validator');
+const authController = require('../controllers/authController');
 
 const SECRET_KEY = 'secretkey23456';
 
@@ -9,16 +12,13 @@ const SECRET_KEY = 'secretkey23456';
 const users = [];
 
 // Sign-up (Inscription)
-router.post('/signup', async (req, res) => {
-  console.log(req.body);
-  const salt = await bcrypt.genSalt(10);
-  const hashedPassword = await bcrypt.hash(req.body.password, salt);
-  const user = {
-    username: req.body.username,
-    password: hashedPassword
-  };
-  users.push(user);
-  res.status(201).send('Utilisateur créé');
+router.post('/signup', signUpValidationRules(), async (req, res) => {
+  const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(422).json({ errors: errors.array() });
+    }
+
+    authController.signUp(req, res);
 });
 
 // Sign-in (Connexion)
