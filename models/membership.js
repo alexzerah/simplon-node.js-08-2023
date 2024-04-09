@@ -27,6 +27,3 @@ module.exports = (sequelize, DataTypes) => {
 
     return Membership;
 };
-
-
-// membership.belongsTo(db.user, { foreignKey: 'userId', unique: true});
