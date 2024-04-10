@@ -1,72 +1,62 @@
-# Comment créer un serveur Node.js ?
+# Comment créer un serveur Node.js avec Exoress ?
 
-Node.js est un outils.
+[Qu'est-ce que Node.js ?](./theory/01-node.md)
 
-Express est un framework minimaliste qui permet de faire un serveur “plus facilement”.
-> ⚠️ Epress est aujourd’hui considéré comme vieux car non mis a jour. 
-Il est plus recommandé d’utiliser fastify ou Adonis/Nest/Api.
+> ⚠️ Désormais il est recommandé d'utiliser Fastify en remplacement d'Express, car ce dernier n'est plus mis à jour.
 
-```
-npm install express-generator
-```
+## Installer Express
 
 ```
-npx express no—-view myapp
+npx express-generator --no-view bookingApp 
 ```
 
-Remplacer myapp par votre nom de dossier.
+- `npx` : Permet d'executer des commandes
+- `express-generator` : Générateur d'applications Express
+- `--no-view` : paramètre pour ne pas installer de vue
 
-Cette commande va installer les dossiers et fichiers nécessaires express.
-Nous voulons utiliser express comme une API, nous lui demandons donc de ne pas installer de vue avec le paramètre `no-view`.
+> ⚙️ Remplacer **bookingApp** par votre nom de dossier.
+
+Cette commnade va installer express et les fichiers nécessaires pour créer un serveur.
 
 Avant de continuer, vous pouvez faire la commande suivantes pour installer les dépendances.
 
 ```bash
-cd myapp # Optionnel, si besoin
+cd bookingApp
 npm i # équivalent a npm install
 npm run start #pour lancer le serveur
 ```
 
-Vous devriez avoir les dossiers et fichiers suivants :
+## Architecture
 
 ```bash
--myapp
-——bin
-——————www
-——node_modules
-——public
-——————images
-——————javascripts
-——————stylesheets
-——————Index.html
-——routes
-——————index.js
-——————users.js
-——app.js
-——package.json
-——package-lock.json
+├── bin/
+│   └── www
+├── node_modules/
+├── public/
+│   ├── javascripts/
+│   ├── images/
+│   ├── stylesheets/
+│   │   └── style.css
+│   └── index.html
+├── routes/
+│   ├── index.js
+│   └── users.js
+├── app.js
+├── package.json
+└── package-lock.json 
 ```
 
 Voici a quoi corrrespondent ces fichiers et dossiers :
 
-- bin : contient le fichier relatifs au serveur, www. Cela permet de lancer le serveur (host, port, erreurs…)
-- node modules : Fichiers des modules externes. C’est ici qu’est le code d’Express.
-- public : fichiers statiques qui ne seront pas exécuter par le serveur. Par exemple les images, css, html… Nous allons tout supprimer a l’intérieur.
-- routes : Contients les routes (c’est a dires chemins de nôtres applications et leur actions.
-- app.js : Fichier principal, relatif a la gestion de notre serveur.
-- package-lock.json : Fichiers automatiquement généré. Ne pas toucher mais il faut le versionner. Permet de s’assurer des bonnes versions de des dépendances l’application.
-- package.json : Fichier de configuration, contient les dépendances et d’autres elements.
+- `bin` : contient le fichier relatifs au serveur, www. Cela permet de lancer le serveur (host, port, erreurs…)
+- `node modules` : Fichiers des modules externes. C’est ici qu’est le code d’Express.
+- `public` : fichiers statiques qui ne seront pas exécuter par le serveur. Par exemple les images, css, html… Nous allons tout supprimer a l’intérieur.
+- `routes` : Contients les routes (c’est a dires chemins de nôtres applications et leur actions.
+- `app.js` : Fichier principal, relatif a la gestion de notre serveur.
+- `package-lock.json` : Fichiers automatiquement généré. Ne pas toucher mais il faut le versionner. Permet de s’assurer des bonnes versions de des dépendances l’application.
+- `package.json` : Fichier de configuration, contient les dépendances et d’autres elements.
 
 ## Supprimer la partie vue
-
-### Le dossier Public 
-
-Supprimer les dossiers et fichiers suivants, dans le repertoire public : 
-
-- images
-- javaScript
-- stylesheets
-- index.html 
 
 ### Les routes
 
