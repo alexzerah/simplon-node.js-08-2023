@@ -1,58 +1,50 @@
 // Importation des modèles Sequelize
 const { Reservation, Table, Client } = require('../models');
 const logger = require('../utils/logger');
+const Controller = require('./controller');
 
-// Contrôleur pour créer une réservation
-exports.createReservation = async (req, res) => {
-    try {
-        logger.info('Création d\'une réservation par ' + req.user);
-        const {id_user, id_spot, id_room, number_of_customers, reservation_date, reservation_name, reservation_note, reservation_status,  userId } = req.body;
-        
-        if (!reservation_name) {
-            res.status(422).json({error: "Le nom de la réservation est obligatoire"});
-          }
+class ReservationController extends Controller {
 
-        if (typeof number_of_customers !== 'number' || !Number.isInteger(number_of_customers)) {
-            res.status(422).json({error: "Le format du nombre de convive n'est pas bon (Nombre d'entier attendu)"});
-        }
-
-        if (!reservation_date) {
-            res.status(422).json({error: "La date de réservation est obligatoire"});
-            return;
-          }
-        
-        if (!id_spot && !id_room) {
-            res.status(422).json({message:"Vous devez renseigner un spot ou une room"});
-        }
-
-        const r1 = Reservation.build({
-            id_user: id_user,
-            number_of_customers: number_of_customers,
-            reservation_date: reservation_date,
-            reservation_name: reservation_name,
-            reservation_note: reservation_note,
-            reservation_status: reservation_status,
-            userId: userId
-        });
-          
-        r1.save().then(
-        () => console.log("Réservation enregistrée")
-        );
-    
-        res.json({message: 'Votre reservation a bien été enregistrée'});
-    } catch (error) {
-        console.log(error);
-        logger.error(error.message);
-        // res.status(400).json({ error: error.message });
+    constructor(props) {
+        super(props, props);
+        this.paginate = this.paginate.bind(this);
     }
-};
+
+     async createReservation(req, res) {
+        try {
+            logger.info('Création d\'une réservation par ' + req.user);
+            const {number_of_customers, date, name, note, status } = req.body;
+
+            const r1 = Reservation.build({
+
+                number_of_customers: number_of_customers,
+                date: date,
+                name: name,
+                note: note,
+                status: status,
+            });
+            //
+            // await r1.save()
+            // console.log("Réservation enregistrée");
+
+            res.json({message: 'Votre reservation a bien été enregistrée'});
+        } catch (error) {
+            console.log(error);
+            logger.error(error.message);
+            res.status(400).json({ error: error.message });
+        }
+    };
 
 // Contrôleur pour obtenir la liste des réservations
-exports.getReservations = async (req, res) => {
-    try {
-        const reservations = await Reservation.findAll({});
-        res.status(200).json(reservations);
-    } catch (error) {
-        res.status(400).json({ error: error.message });
+    async getReservations(req, res, next) {
+        try {
+            const results = await Reservation.findAll();
+            const paginationResult = await this.paginate(req, results);
+            res.status(200).json(paginationResult);
+        } catch (error) {
+            res.status(400).json({ error: error.message });
+        }
     }
-};
+}
+
+module.exports = ReservationController;
