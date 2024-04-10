@@ -17,9 +17,9 @@
 
 | Tâche                                     | Validée  | Validation                         |
 |-------------------------------------------|:----------:|------------------------------------|
-| 🔜 Création des classes                      |     ❌     |                                    |
-| 🔜 Application des principes de POO          |     ❌     |                                    |
-| 🔜 Nommage cohérent et explicite des classes |     ❌     |                                    |
+| 🔜 Création des classes                      |     🟠     |                                    |
+| 🔜 Application des principes de POO          |     🟠     |                                    |
+| 🔜 Nommage cohérent et explicite des classes |     🟠     |                                    |
 
 ## Modèles
 
@@ -33,7 +33,7 @@
 
 | Tâche                                         | Validée  | Validation                              |
 |-----------------------------------------------|:----------:|-----------------------------------------|
-| 🔜 Validation des entrées avec Express Validator |     ❌     |                                         |
+| 🔜 Validation des entrées avec Express Validator |     ✅     |                                         |
 | 🔜 Sanitisation des données avec Joi             |     ❌     |                                         |
 
 ## Diagrammes

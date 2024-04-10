@@ -17,14 +17,14 @@
 
 | Tâches                                                                       | Statut       | Validation     |
 |------------------------------------------------------------------------------|------------- |----------------|
-| Les implementations du code sont fonctionnels                                | ❌           |                |
+| Les implementations du code sont fonctionnels                                | ✅           |                |
 
 ## Structure
 
 | Tâches                                                                       | Statut       | Validation     |
 |------------------------------------------------------------------------------|------------- |----------------|
-| Route                                                                        | ❌           |                |
-| Controller                                                                   | ❌           |                |
+| Route                                                                        | 🟠           |                |
+| Controller                                                                   | 🟠           |                |
 | 🔜 Services                                                                  | ❌           |                |
 
 ## POO
@@ -38,12 +38,12 @@
 
 | Tâches                                                                       | Statut       | Validation     |
 |------------------------------------------------------------------------------|------------- |----------------|
-| Authentification                                                             | ❌           |                |
-| Authorisation                                                                | ❌           |                |
-| Sign in                                                                      | ❌           |                |
-| Sign up                                                                      | ❌           |                |
-| bcrypt                                                                       | ❌           |                |
-| jwt                                                                          | ❌           |                |
+| Authentification                                                             | ✅           |                |
+| Authorisation                                                                | ✅           |                |
+| Sign in                                                                      | ✅           |                |
+| Sign up                                                                      | ✅           |                |
+| bcrypt                                                                       | ✅           |                |
+| jwt                                                                          | ✅           |                |
 | Mot de passe oublié                                                          | ❌           |                |
 
 ## Outils, méthodes et docs

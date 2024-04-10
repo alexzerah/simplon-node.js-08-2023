@@ -44,7 +44,7 @@
 | Sign up                                                                      | ✅           |                |
 | bcrypt                                                                       | ✅           |                |
 | jwt                                                                          | ✅           |                |
-| Mot de passe oublié                                                          | 🟠           |                |
+| Mot de passe oublié                                                          | ✅           |                |
 
 ## Outils, méthodes et docs
 
@@ -53,13 +53,8 @@
 | POSTMAN                                                                      | ✅           |                |
 | 🔜 Validation des données (express validator)                                | ❌           |                |
 | 🔜 Purification des données (JOI)                                            | ❌           |                |
-| 🔜 Mise en place des logs (morgan et autre winston)                          | ❌           |                |
+| 🔜 Mise en place des logs (morgan et autre winston)                          | ✅           |                |
 | 🔜 Schema bdd / schema du projet / explication du code                       | 🟠           |                |
 | 🔜 5 sources de veille                                                       | ❌           |                |
 | 🔜 Explication d’un concept                                                  | ❌           |                |
 | 🔜 Dossier type d'une démarche de travail                                    | ❌           |                |
-
-
-
-Gestion des roles
-- Créer une base specifique

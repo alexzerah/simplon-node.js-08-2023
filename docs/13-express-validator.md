@@ -1,14 +1,13 @@
 # Express validator
 
 <!-- TOC -->
-* [Express validator](#express-validator)
-  * [Installation](#installation)
-  * [Utilisation](#utilisation)
-  * [Middleware](#middleware)
-    * [Explication du code](#explication-du-code)
-  * [Les routes](#les-routes)
+- [Express validator](#express-validator)
+  - [Installation](#installation)
+  - [Utilisation](#utilisation)
+  - [Middleware](#middleware)
+    - [Explication du code](#explication-du-code)
+  - [Les routes](#les-routes)
 <!-- TOC -->
-
 
 ## Installation
 
@@ -19,6 +18,7 @@ npm install express-validator
 ## Utilisation
 
 Nous allons implémenter `express-validator` :
+
 - dans les routes
 - dans les middlewares
 

@@ -25,14 +25,14 @@
 |------------------------------------------------------------------------------|------------- |----------------|
 | Route                                                                        | ✅           |                |
 | Controller                                                                   | ✅           |                |
-| 🔜 Services                                                                  | ❌           |                |
+| 🔜 Services                                                                  | ✅           |                |
 
 ## POO
 
 | Tâches                                                                       | Statut       | Validation     |
 |------------------------------------------------------------------------------|------------- |----------------|
-| 🔜 Classe                                                                    | ❌           |                |
-| 🔜 Bonnes pratiques POO                                                      | ❌           |                |
+| 🔜 Classe                                                                    | 🟠           |                |
+| 🔜 Bonnes pratiques POO                                                      | 🟠           |                |
 
 ## Sécurité
 
@@ -51,11 +51,10 @@
 | Tâches                                                                       | Statut       | Validation     |
 |------------------------------------------------------------------------------|------------- |----------------|
 | POSTMAN                                                                      | ✅           |                |
-| 🔜 Validation des données (express validator)                                | ❌           |                |
+| 🔜 Validation des données (express validator)                                | ✅           |                |
 | 🔜 Purification des données (JOI)                                            | ❌           |                |
-| 🔜 Mise en place des logs (morgan et autre winston)                          | ❌           |                |
-| 🔜 Schema bdd / schema du projet / explication du code                       | ❌           |                |
+| 🔜 Mise en place des logs (morgan et autre winston)                          | ✅           |                |
+| 🔜 Schema bdd / schema du projet / explication du code                       | ✅           |                |
 | 🔜 5 sources de veille                                                       | ❌           |                |
 | 🔜 Explication d’un concept                                                  | ❌           |                |
 | 🔜 Dossier type d'une démarche de travail                                    | ❌           |                |
-

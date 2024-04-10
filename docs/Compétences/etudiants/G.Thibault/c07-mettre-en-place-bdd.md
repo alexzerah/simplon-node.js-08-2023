@@ -16,7 +16,7 @@
 
 | Tâche                                                        | Validée      | Validation                        |
 |--------------------------------------------------------------|:-----------:|------------------------------------|
-| Setup indiqué dans la documentation                           |     🟠     |                                    |
+| Setup indiqué dans la documentation                           |     ✅     |                                    |
 | Fichier et dossier modèle                                     |     ✅     |                                    |
 | Génération de seed automatisée                                |     ✅     |                                    |
 | Implémentation de différence base (dev/test/preprod)          |     ✅     |                                    |
@@ -33,8 +33,8 @@
 | Tâche                                                        | Validée      | Validation                        |
 |--------------------------------------------------------------|:-----------:|------------------------------------|
 | Authentification                                              |     ✅     |                                    |
-| Autorisation d’accès                                          |     🟠     |                                    |
-| Assurer le Contrôle d'Accès Basé sur les Rôles (RBAC)         |     ❌     |                                    |
+| Autorisation d’accès                                          |     ✅     |                                    |
+| Assurer le Contrôle d'Accès Basé sur les Rôles (RBAC)         |     ✅     |                                    |
 
 ## Logs
 

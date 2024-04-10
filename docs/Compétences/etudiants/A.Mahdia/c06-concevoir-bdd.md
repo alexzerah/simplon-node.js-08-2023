@@ -14,4 +14,4 @@
 | Schema physique de base de données          |     🟠     |                                    |
 | Schema entite association                   |     ❌     |                                    |
 | Diagramme de classe                         |     ❌     |                                    |
-| Association implémentée                     |     ❌     |                                    |
+| Association implémentée                     |     ✅     |                                    |

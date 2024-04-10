@@ -15,8 +15,8 @@
 
 | Tâche                                                     | Validée    | Validation                         |
 |-----------------------------------------------------------|:----------:|------------------------------------|
-| Utilisation d'Express Validator                           |     ❌     |                                    |
-| Intégration de bcrypt pour le hashage des mots de passe   |     ❌     |                                    |
+| Utilisation d'Express Validator                           |     ✅     |                                    |
+| Intégration de bcrypt pour le hashage des mots de passe   |     ✅     |                                    |
 | Sanitisation avec Joi                                     |     ❌     |                                    |
 | Accès aux données restreint par rôle                      |     ❌     |                                    |
 | Implémentation du champ updatedAt dans les modèles        |     ✅     |                                    |
@@ -26,7 +26,7 @@
 
 | Tâche                                                     | Validée    | Validation                         |
 |-----------------------------------------------------------|:----------:|------------------------------------|
-| Configuration et utilisation des logs (Morgan + Winston)  |     ❌     |                                    |
+| Configuration et utilisation des logs (Morgan + Winston)  |     ✅     |                                    |
 
 ## Tests
 
