@@ -23,8 +23,8 @@
 
 | Tâches                                                                       | Statut       | Validation     |
 |------------------------------------------------------------------------------|------------- |----------------|
-| Route                                                                        | 🟠           |                |
-| Controller                                                                   | 🟠           |                |
+| Route                                                                        | ✅           |                |
+| Controller                                                                   | ✅           |                |
 | 🔜 Services                                                                  | ❌           |                |
 
 ## POO
@@ -53,8 +53,8 @@
 | POSTMAN                                                                      | ❌           |                |
 | 🔜 Validation des données (express validator)                                | ❌           |                |
 | 🔜 Purification des données (JOI)                                            | ❌           |                |
-| 🔜 Mise en place des logs (morgan et autre winston)                          | ❌           |                |
-| 🔜 Schema bdd / schema du projet / explication du code                       | ❌           |                |
+| 🔜 Mise en place des logs (morgan et autre winston)                          | ✅           |                |
+| 🔜 Schema bdd / schema du projet / explication du code                       | ❌❌           |                |
 | 🔜 5 sources de veille                                                       | ❌           |                |
 | 🔜 Explication d’un concept                                                  | ❌           |                |
 | 🔜 Dossier type d'une démarche de travail                                    | ❌           |                |

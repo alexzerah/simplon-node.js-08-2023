@@ -44,16 +44,16 @@
 | Sign up                                                                      | ✅           |                |
 | bcrypt                                                                       | ✅           |                |
 | jwt                                                                          | ✅           |                |
-| Mot de passe oublié                                                          | 🟠           |                |
+| Mot de passe oublié                                                          | ✅           |                |
 
 ## Outils, méthodes et docs
 
 | Tâches                                                                       | Statut       | Validation     |
 |------------------------------------------------------------------------------|------------- |----------------|
 | POSTMAN                                                                      | ✅           |                |
-| 🔜 Validation des données (express validator)                                | ❌           |                |
-| 🔜 Purification des données (JOI)                                            | ❌           |                |
-| 🔜 Mise en place des logs (morgan et autre winston)                          | ❌           |                |
+| 🔜 Validation des données (express validator)                                | ✅           |                |
+| 🔜 Purification des données (JOI)                                            | ✅           |                |
+| 🔜 Mise en place des logs (morgan et autre winston)                          | ✅           |                |
 | 🔜 Schema bdd / schema du projet / explication du code                       | ✅           |                |
 | 🔜 5 sources de veille                                                       | ❌           |                |
 | 🔜 Explication d’un concept                                                  | ❌           |                |

@@ -33,8 +33,8 @@
 
 | Tâche                                         | Validée  | Validation                              |
 |-----------------------------------------------|:----------:|-----------------------------------------|
-| 🔜 Validation des entrées avec Express Validator |     🟠     |                                         |
-| 🔜 Sanitisation des données avec Joi             |     ❌     |                                         |
+| 🔜 Validation des entrées avec Express Validator |     ✅     |                                         |
+| 🔜 Sanitisation des données avec Joi             |     ✅     |                                         |
 
 ## Diagrammes
 
@@ -47,4 +47,4 @@
 
 | Tâche                                                  | Validée  | Validation                         |
 |--------------------------------------------------------|:----------:|------------------------------------|
-| Développement de tests unitaires pour chaque composant |     🟠     |                                    |
+| Développement de tests unitaires pour chaque composant |     ✅     |                                    |

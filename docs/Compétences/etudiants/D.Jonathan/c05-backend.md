@@ -51,10 +51,10 @@
 | Tâches                                                                       | Statut       | Validation     |
 |------------------------------------------------------------------------------|------------- |----------------|
 | POSTMAN                                                                      | 🟠           |                |
-| 🔜 Validation des données (express validator)                                | ❌           |                |
-| 🔜 Purification des données (JOI)                                            | ❌           |                |
-| 🔜 Mise en place des logs (morgan et autre winston)                          | ❌           |                |
-| 🔜 Schema bdd / schema du projet / explication du code                       | ❌           |                |
+| 🔜 Validation des données (express validator)                                | ✅           |                |
+| 🔜 Purification des données (JOI)                                            | ✅           |                |
+| 🔜 Mise en place des logs (morgan et autre winston)                          | ✅           |                |
+| 🔜 Schema bdd / schema du projet / explication du code                       | ✅           |                |
 | 🔜 5 sources de veille                                                       | ❌           |                |
 | 🔜 Explication d’un concept                                                  | ❌           |                |
 | 🔜 Dossier type d'une démarche de travail                                    | ❌           |                |

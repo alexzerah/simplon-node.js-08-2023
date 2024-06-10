@@ -45,14 +45,14 @@
 | Tâche                                                | Validée | Lien |
 | ---------------------------------------------------- | ------- | ---- |
 | 🔜 Concevoir le schéma de base de données           | 🟠     |      |
-| Créer les tables et relations conformément au schéma | ❌      |      |
+| Créer les tables et relations conformément au schéma | 🟠      |      |
 
 ## Tests
 
 | Tâche                                                                   | Validée | Lien |
 | ----------------------------------------------------------------------- | ------- | ---- |
 | 🔜 Définir une matrice de test pour couvrir toutes les fonctionnalités | ❌      |      |
-| 🔜 Implémenter les tests unitaires et d'intégration                    | ❌      |      |
+| 🔜 Implémenter les tests unitaires et d'intégration                    | 🟠      |      |
 
 ## Documentation API
 

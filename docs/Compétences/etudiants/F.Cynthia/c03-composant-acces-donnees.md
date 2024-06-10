@@ -35,8 +35,8 @@
 
 | Tâche                                                           | Validée | Lien                                             |
 |-----------------------------------------------------------------|-----------|------------------------------------------------|
-| 🔜 Intégrer express-validator pour la validation des données    |    ❌     |                                                |
-| 🔜 Nettoyer les données entrantes pour prévenir les injections  |    ❌     |                                                |
+| 🔜 Intégrer express-validator pour la validation des données    |    ✅     |                                                |
+| 🔜 Nettoyer les données entrantes pour prévenir les injections  |    ✅     |                                                |
 | Établir une nomenclature cohérente pour le code                 |    ✅     |                                                |
 | Commenter et expliquer les segments de code complexes           |    ✅     |                                                |
 
@@ -44,7 +44,7 @@
 
 | Tâche                                                           | Validée | Lien                                             |
 |-----------------------------------------------------------------|-----------|------------------------------------------------|
-| 🔜 Concevoir le schéma de base de données                       |    ❌     |                                                |
+| 🔜 Concevoir le schéma de base de données                       |    ✅     |                                                |
 | Créer les tables et relations conformément au schéma            |    ❌     |                                                |
 
 ## Tests

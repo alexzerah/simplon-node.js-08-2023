@@ -20,7 +20,7 @@
 |-----------------------------------------------------------------|-----------|------------------------------------------------|
 | Création des dossiers et fichiers Routes (User, Room, Spot...)  |    ✅     |                                                |
 | Création des dossiers et fichiers Modèles (User, Room, Spot...) |    ✅     |                                                |
-| Mise en place des contrôleurs (User, Room, Spot...)             |    🟠     |                                                |
+| Mise en place des contrôleurs (User, Room, Spot...)             |    ✅     |                                                |
 | 🔜 Implémenter les services                                     |    ❌     |                                                |
 
 ## Sécurité
@@ -35,8 +35,8 @@
 
 | Tâche                                                           | Validée | Lien                                             |
 |-----------------------------------------------------------------|-----------|------------------------------------------------|
-| 🔜 Intégrer express-validator pour la validation des données    |    ❌     |                                                |
-| 🔜 Nettoyer les données entrantes pour prévenir les injections  |    ❌     |                                                |
+| 🔜 Intégrer express-validator pour la validation des données    |    🟠     |                                                |
+| 🔜 Nettoyer les données entrantes pour prévenir les injections  |    🟠     |                                                |
 | Établir une nomenclature cohérente pour le code                 |    ✅     |                                                |
 | Commenter et expliquer les segments de code complexes           |    🟠     |                                                |
 

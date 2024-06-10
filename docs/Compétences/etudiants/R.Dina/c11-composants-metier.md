@@ -34,7 +34,7 @@
 | Tâche                                         | Validée  | Validation                              |
 |-----------------------------------------------|:----------:|-----------------------------------------|
 | 🔜 Validation des entrées avec Express Validator |     ✅     |                                         |
-| 🔜 Sanitisation des données avec Joi             |     ❌     |                                         |
+| 🔜 Sanitisation des données avec Joi             |     ✅     |                                         |
 
 ## Diagrammes
 

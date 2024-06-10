@@ -52,8 +52,8 @@
 |------------------------------------------------------------------------------|------------- |----------------|
 | POSTMAN                                                                      | ✅           |                |
 | 🔜 Validation des données (express validator)                                | ✅           |                |
-| 🔜 Purification des données (JOI)                                            | ❌           |                |
-| 🔜 Mise en place des logs (morgan et autre winston)                          | ❌           |                |
+| 🔜 Purification des données (JOI)                                            | ✅           |                |
+| 🔜 Mise en place des logs (morgan et autre winston)                          | ✅           |                |
 | 🔜 Schema bdd / schema du projet / explication du code                       | ✅           |                |
 | 🔜 5 sources de veille                                                       | ❌           |                |
 | 🔜 Explication d’un concept                                                  | ❌           |                |

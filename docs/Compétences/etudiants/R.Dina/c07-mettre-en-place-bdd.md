@@ -18,7 +18,7 @@
 |--------------------------------------------------------------|:-----------:|------------------------------------|
 | Setup indiqué dans la documentation                           |     ❌     |                                    |
 | Fichier et dossier modèle                                     |     ✅     |                                    |
-| Génération de seed automatisée                                |     ❌     |                                    |
+| Génération de seed automatisée                                |     ✅     |                                    |
 | Implémentation de différence base (dev/test/preprod)          |     ✅     |                                    |
 | Fichier de config + .env éventuellement                       |     ✅     |                                    |
 

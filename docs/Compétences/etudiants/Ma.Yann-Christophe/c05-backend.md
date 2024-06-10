@@ -38,8 +38,8 @@
 
 | Tâches              | Statut | Validation |
 | ------------------- | ------ | ---------- |
-| Authentification    | 🟠    |            |
-| Authorisation       | 🟠    |            |
+| Authentification    | ✅    |            |
+| Authorisation       | ✅    |            |
 | Sign in             | ✅     |            |
 | Sign up             | ✅     |            |
 | bcrypt              | ✅     |            |

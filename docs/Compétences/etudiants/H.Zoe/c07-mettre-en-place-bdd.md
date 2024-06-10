@@ -34,11 +34,11 @@
 |--------------------------------------------------------------|:-----------:|------------------------------------|
 | Authentification                                              |     ✅     |                                    |
 | Autorisation d’accès                                          |     ✅     |                                    |
-| Assurer le Contrôle d'Accès Basé sur les Rôles (RBAC)         |     🟠     |                                    |
+| Assurer le Contrôle d'Accès Basé sur les Rôles (RBAC)         |     ✅     |                                    |
 
 ## Logs
 
 | Tâche                                                        | Validée      | Validation                        |
 |--------------------------------------------------------------|:-----------:|------------------------------------|
-| - Utilisation de Morgan et Winston                        |     🟠     |                                    |
+| - Utilisation de Morgan et Winston                        |     ✅     |                                    |
 
