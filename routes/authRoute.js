@@ -8,10 +8,12 @@ const authController = require('../controllers/authController');
 
 const SECRET_KEY = 'secretkey23456';
 
-// Simuler une base de données
-const users = [];
-
-// Sign-up (Inscription)
+/**
+ * @swagger
+ * /signup:
+ *  post:
+ *  summary: Créer un utilisateur
+ */
 router.post('/signup', signUpValidationRules(), async (req, res) => {
   const errors = validationResult(req);
     if (!errors.isEmpty()) {
